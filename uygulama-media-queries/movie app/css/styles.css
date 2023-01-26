@@ -1,0 +1,406 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("buttons.css");
+@import url("base.css");
+
+
+
+
+
+
+
+main{
+    margin-top: 50px;
+}
+
+#showcase {
+    background:
+    linear-gradient(to bottom, rgba(237, 245, 247,0.2),rgba(114, 176, 192,0.5) ), 
+    url('../img/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+
+#showcase .content{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    font-size: 15px;
+    background: rgba(46, 76, 109, 0.3);
+    padding: 30px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+#showcase h1{
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 576px){
+    #showcase{
+        height: 50vh;
+    }
+    #showcase .content{
+        font-size: 18;
+    }
+}
+@media (min-width: 768px){
+    #showcase{
+        height: 55vh;
+    }
+    #showcase .content{
+        font-size: 21;
+    }
+}
+
+@media (min-width: 992px){
+    #showcase{
+        height: 60vh;
+    }
+    #showcase .content{
+        font-size: 24;
+    }
+}
+
+@media (min-width: 1200px){
+    #showcase{
+        height: 65vh;
+    }
+    #showcase .content{
+        font-size: 27;
+    }
+}
+
+@media (min-width: 1400px){
+    #showcase{
+        height: 70vh;
+    }
+    #showcase .content{
+        font-size: 30;
+    }
+}
+
+
+
+#how-it-works {
+    text-align: center;
+   
+}
+
+.main-header{
+    background-color: #edf5f7;
+    padding: 8px 16px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+
+.main-nav{
+     display: inline;
+     width: calc(100% - 99px);
+     text-align: right;
+     display: inline-block;
+}
+
+.main-nav__items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item{
+    display: inline-block;
+    margin: 0 10px;
+ 
+}
+
+.main-header__logo{
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: brown;
+}
+
+
+
+.main-nav__item a:hover{
+    color: bisque;
+}
+.main-nav__item:hover::before{
+    color: bisque;
+}
+.main-nav__item:active::before{
+    color:white;
+}
+
+.main-nav__item a:active{
+    color: white;
+}
+.main-nav__item::before{
+    content: '\2022';
+    padding: 5px;
+    color: brown;
+}
+
+/* .main-nav__item__login a{
+    color: white;
+    background-color:darkcyan;
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.main-nav__item__login a:hover{
+    color: darkcyan;
+    border: 2px solid darkcyan;
+    background-color: white;
+} */
+.main-nav__item__login::before{
+    content:none;
+}
+
+
+
+.icon-box h3{
+    color: #3e4555;
+    font-size: 26px;
+    padding: 5px;
+}
+
+.icon-box i{
+    color: aquamarine;
+}
+
+.features__left {
+    background: 
+    linear-gradient(to bottom, rgba(237, 245, 247,0.2),rgba(114, 176, 192,0.5) ),
+    url('../img/features.jpeg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.features__right {
+    background-color: #edf5f7;
+    padding: 40px;
+    vertical-align: top;
+}
+
+.features__left, .features__right {
+    height: 350px;
+}
+
+
+.features__right h3 {
+    font-size: 30px;
+}
+
+/* #features a {
+    background-color: darkcyan;
+    color: #fff;
+    padding: 7px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#features a:hover {
+    border: 1px solid darkcyan;
+    color: darkcyan;
+    background-color: #fff;
+} */
+
+/* floats için style kısmı */
+
+.section-title{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3e4555;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+
+.inner-plan{
+    background: #edf5f7;
+    padding: 25px 10px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77, 0.5) 0px 20px 30px -10px;
+    transition:box-shadow .5s;
+}
+
+.inner-plan:hover{
+    box-shadow: rgb(38, 57, 77, 0.9) 0px 20px 30px -10px;
+}
+
+
+
+
+.plan{  
+    text-align: center;
+    padding: 5px;
+}
+.plan__badge{
+    background: white;
+    color: darkcyan;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.recommended_plan{
+    color: white;
+    background:#1e90ff;
+}
+
+.plan__features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan__features li{
+    margin: 6px 0;
+}
+
+.plan--featured{
+    position: relative;
+    top: 28px;
+}
+
+#backtotop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#backtotop i{
+    color: #647E68;
+    font-size: 40px;
+    transition: color .6s;
+}
+
+#backtotop i:hover{
+    color:#4f6452;
+}
+
+.counter {
+    background: linear-gradient(to bottom, #7a96d1 0%, #182747 100%);
+    text-align: center;
+    padding: 50px;
+}
+
+.counter__item{
+    font-size: 30px;
+    font-weight: 500;
+    color:white;
+}
+
+.counter h4{
+    margin: 0;
+    color: white;    
+}
+
+.card-container{
+    padding:10px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 10px 10px 40px rgba(56, 71, 58,0.2);
+    /* position: relative;
+    top: 0; */
+    transition: all .3s;
+}
+
+.card:hover{
+    /* top: -10px; */
+    transform:translateY(-10px);
+}
+
+.card-image{
+    max-height: 350px;
+}
+
+.card-body{
+    padding: 30px;
+}
+
+
+
+footer{
+    background-color: #7a96d1;
+    padding: 30px;
+    margin-top: 30px;
+    position: relative;
+    bottom: -200px;
+}
+
+footer a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.social-links{
+    text-align: right;
+}
+
+.fa-brands{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.fa-brands:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background-color: #3b5998;
+    color: white;
+}
+
+.fa-twitter{
+    background-color: #55acee;
+    color: white;
+}
+
+.fa-instagram{
+    background-color: #125688;
+    color: white;
+}
